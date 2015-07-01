@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset = "utf-8"></meta>
+	<title>Tetris.js</title>
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container vertical-center">
+		<div class="row">
+		<h1 id="title">Tetris JS</h1>
+			<div id="instructions" class="col-md-4">
+				<h2>Instructions</h2>
+				<p>Press Up to rotate</p>
+				<p>Press Left and Right to move</p>
+				<p>Press Down to hurry drop</p>
+			</div>
+			<div id="tetris" class="col-md-4">
+				<table id="playfield"></table>
+			</div>
+			<div id="points" class="col-md-4">
+				<h2>Score</h2>
+				<p id="score">0</p>
+			</div>
+		</div>
+		
+		<!-- Restart Modal Window -->	
+		<div class="modal fade" id="restart_game" tabindex="-1" role="dialog" aria-labelledby="restart_game">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="restartModal">Tetris JS</h4>
+					</div>
+					<div class="modal-body">
+						<p>Sorry! You lost. Would you like to restart?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="restart" class="btn btn-default" data-dismiss="modal">Yes</button>
+						<button type="button" id="no_restart"class="btn btn-primary">Nope</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Include tetris JS -->
+		<script src="js/tetris.js"></script>
+		</div>
+	</body>
+</html>
