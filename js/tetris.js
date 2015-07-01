@@ -392,6 +392,16 @@ tetris.spawn = function(){
 		gravity = setInterval (function(){
 			tetris.drop();
 		}, 300);
+	} else if (this.score >= 300){
+		clearInterval(gravity);
+		gravity = setInterval (function(){
+			tetris.drop();
+		}, 200);
+	} else if (this.score >= 400){
+		clearInterval(gravity);
+		gravity = setInterval (function(){
+			tetris.drop();
+		}, 150);
 	}
 	this.origin = {row: 1, col: 5};
 	this.currentCoor = this.shapeToCoor(this.currentShape, this.origin);
